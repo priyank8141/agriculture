@@ -1,0 +1,62 @@
+.home{  
+    padding-top:80px;
+    padding-bottom:80px;
+    background-image: url("src/assets/images/banner.jpg");
+    background-repeat: no-repeat, repeat;
+    background-color: #cccccc;
+    background-size: cover;
+    
+    
+}
+.home1{
+    color:green;
+    
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:larger;
+    padding-left:30px ;
+    padding-top:250px;
+}
+.home2{
+    padding-left:30px ;
+    padding-top:150px;
+}
+
+.about{
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: lawngreen;
+}
+
+.services{
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: indigo;
+    color: white;
+
+}
+.services1{
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:25px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+
+}
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+}
+
+.caption {
+    display: block;
+}
+.contact{
+    padding-top:10px;
+    padding-bottom:10px;
+}
