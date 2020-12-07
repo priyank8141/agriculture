@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainModule } from './main/main.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,7 @@ import { MainModule } from './main/main.module';
     AppRoutingModule,
     MainModule
   ],
-  providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

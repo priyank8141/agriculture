@@ -5,13 +5,17 @@ import { ViewComponent } from './view/view.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 
+import { AppRoutingModule } from '../app-routing.module';
+
+import { Signup1Component } from './signup1/signup1.component';
+
 
 
 @NgModule({
-  declarations: [HeaderComponent, ViewComponent, FooterComponent, LoginComponent],
-  exports: [HeaderComponent,ViewComponent,LoginComponent],
+  declarations: [HeaderComponent, ViewComponent, FooterComponent, LoginComponent, Signup1Component],
+  exports: [HeaderComponent,ViewComponent,LoginComponent,Signup1Component],
   imports: [
-    CommonModule
+    CommonModule,AppRoutingModule
   ]
 })
 export class MainModule { }
