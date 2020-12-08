@@ -7,27 +7,27 @@
 
 			</div>
 			<div class="card-body">
-				<form>
+				<form [formGroup]='restoform' (submit)="callApi()">
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="username">
+						<input type="text" class="form-control" formControlName="name" placeholder="username">
                     </div>
                     <div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fa fa-envelope"></i></span>
 						</div>
-						<input type="text" class="form-control" placeholder="Email">
+						<input type="text" class="form-control" formControlName="email" placeholder="Email">
 					</div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input form-control" id="defaultInline1" name="inlineDefaultRadiosExample">
+                        <input type="radio" class="custom-control-input form-control" formControlName="gender" value="male" id="defaultInline1" name="gender">
                         <label class="custom-control-label text-white" for="defaultInline1">Male</label>
                     </div>
                       
                       
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" class="custom-control-input form-control" id="defaultInline2" name="inlineDefaultRadiosExample">
+                        <input type="radio" class="custom-control-input form-control" id="defaultInline2" formControlName="gender" value="female" name="gender">
                         <label class="custom-control-label text-white" for="defaultInline2">Female</label>
                     </div>
 
@@ -35,7 +35,7 @@
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-key"></i></span>
 						</div>
-						<input type="password" class="form-control" placeholder="password">
+						<input type="password" class="form-control" formControlName="password" placeholder="password">
                     </div>
                     <div class="input-group form-group">
 						<div class="input-group-prepend">
